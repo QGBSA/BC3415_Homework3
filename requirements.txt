@@ -1,0 +1,17 @@
+flask
+torch
+diffusers==0.19.0
+transformers
+accelerate
+imageio-ffmpeg
+jax
+stable-diffusion-videos @ git+https://github.com/nateraw/stable-diffusion-videos
+numpy
+Pillow
+
+# For text sentiment analysis (based on the model you're using, adjust this if necessary)
+nltk
+scikit-learn
+
+# Optional: using GPU with CUDA
+torchvision

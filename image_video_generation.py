@@ -1,8 +1,9 @@
 import torch
 from stable_diffusion_videos.stable_diffusion_pipeline import StableDiffusionWalkPipeline
+from diffusers import StableDiffusionPipeline
 
 # Load the pipeline once globally
-pipeline = StableDiffusionWalkPipeline.from_pretrained(
+pipeline = StableDiffusionPipeline.from_pretrained(
     "CompVis/stable-diffusion-v1-4",
     torch_dtype=torch.float16,
     revision="fp16"
