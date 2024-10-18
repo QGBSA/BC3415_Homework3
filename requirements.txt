@@ -2,5 +2,5 @@ flask
 torch
 textblob
 # For text sentiment analysis (based on the model you're using, adjust this if necessary)
-scikit-learn
+transformers
 openai
