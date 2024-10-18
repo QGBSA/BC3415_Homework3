@@ -1,17 +1,6 @@
-flask==3.0.3
-torch==2.4.1
-diffusers==0.19.0
-transformers==4.45.2
-stable-diffusion-videos @ git+https://github.com/nateraw/stable-diffusion-videos
-accelerate==1.0.1
-imageio-ffmpeg
-jax==0.4.30
-numpy==2.0.2
-Pillow==10.4.0
-
+flask
+torch
+transformers
+textblob
 # For text sentiment analysis (based on the model you're using, adjust this if necessary)
-nltk==3.9.1
-scikit-learn==1.5.2
-
-# Optional: If you're using GPU with CUDA
-torchvision==0.19.1
+scikit-learn
