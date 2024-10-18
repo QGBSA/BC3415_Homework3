@@ -6,42 +6,61 @@
     <title>AI Web App</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
+            font-family: 'Arial', sans-serif;
             text-align: center;
+            background-color: #f4f4f9;
             padding: 50px;
         }
         h1 {
-            font-size: 2.5em;
-            color: #4CAF50;
-            margin-bottom: 30px;
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .button-container {
+            margin: 20px;
         }
         .button {
             padding: 15px 30px;
-            font-size: 1.2em;
-            margin: 15px;
+            font-size: 1.5em;
+            margin: 10px;
             cursor: pointer;
             border-radius: 8px;
             background-color: #4CAF50;
             color: white;
             border: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
         }
         .button:hover {
             background-color: #45a049;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
         .button:active {
-            background-color: #3e8e41;
-            transform: translateY(0);
+            transform: translateY(1px);
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #999;
         }
     </style>
 </head>
 <body>
     <h1>AI Web Application</h1>
-    <a href="/sentiment"><button class="button">Text Sentiment Analysis</button></a>
+    <p>Select a functionality to explore:</p>
+    
+    <div class="button-container">
+        <a href="/sentiment"><button class="button">Text Sentiment Analysis</button></a>
+    </div>
+    <div class="button-container">
+        <a href="/generate_image"><button class="button">Image Generation</button></a>
+    </div>
+
+    <footer>
+        &copy; 2024 AI Web App. All rights reserved.
+    </footer>
 </body>
 </html>
