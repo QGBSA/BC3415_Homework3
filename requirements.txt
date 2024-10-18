@@ -4,3 +4,4 @@ textblob
 # For text sentiment analysis (based on the model you're using, adjust this if necessary)
 transformers
 openai
+gunicorn
